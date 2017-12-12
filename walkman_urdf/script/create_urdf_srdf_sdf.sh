@@ -165,7 +165,6 @@ EOF
     rm ${robot_name}_config.urdf.xacro
     mkdir -p ../../${robot_name}_gazebo/database/${robot_name}_urdf/
     cp -r ../meshes/ ../../${robot_name}_gazebo/database/${robot_name}_urdf/
-    cp -r ../../${robot_name}_gazebo/sdf/conf ../../${robot_name}_gazebo/database/${robot_name}_urdf
 else
     echo "Error: could not find config folder in the urdf path"
 fi
