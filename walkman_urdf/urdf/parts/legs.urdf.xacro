@@ -4,9 +4,9 @@
 <xacro:property name="mmTom" value="0.001" />
 <xacro:property name="mm2Tom2" value="${0.001*0.001}" />
 <xacro:property name="tonsToKg" value="1000.0" />
-
 <xacro:property name="PI" value="3.14159265359" />
 <xacro:property name="PI_2" value="1.57079632679" />
+<xacro:property name="DEG2RAD" value="${PI/180.0}" />
 
 
 <!-- LINKS -->
@@ -279,7 +279,7 @@
     <child link="RHipMot"/>
     <origin xyz="${156.9*mmTom} ${-60.*mmTom} ${-108.*mmTom}" rpy="0 0 0" />
     <axis xyz="1 0 0" />
-    <limit velocity="6.283" effort="400" lower="-0.87222" upper="0.697778" />
+    <limit velocity="6.283" effort="400" lower="${-50.*DEG2RAD}" upper="${40.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -288,7 +288,7 @@
     <child link="RThighUpLeg"/>
     <origin xyz="-0.0889 -0.121032 -0.217872" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit velocity="6.283" effort="140" lower="-1.57" upper="0.872222" />
+    <limit velocity="6.283" effort="140" lower="${-90.*DEG2RAD}" upper="${50.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -297,7 +297,7 @@
     <child link="RThighLowLeg"/>
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit velocity="6.283" effort="400" lower="-2.09333" upper="1.046667" />
+    <limit velocity="6.283" effort="400" lower="${-120.*DEG2RAD}" upper="${60.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -306,7 +306,7 @@
     <child link="RLowLeg"/>
     <origin xyz="0.0 0.0 -0.356" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit velocity="6.283" effort="400" lower="0.0" upper="2.442222" />
+    <limit velocity="6.283" effort="400" lower="0.0" upper="${140.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -315,7 +315,7 @@
     <child link="RFootmot"/>
     <origin xyz="0.0 0.0 -0.4" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit velocity="6.283" effort="330" lower="-1.39556" upper="0.697778" />
+    <limit velocity="6.283" effort="330" lower="${-80.*DEG2RAD}" upper="${40.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/> 
   </joint>
 
@@ -324,7 +324,7 @@
       <child link="RFoot"/>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       <axis xyz="1 0 0" />
-      <limit velocity="6.283" effort="210" lower="-0.785" upper="0.785" />
+      <limit velocity="6.283" effort="210" lower="${-45.*DEG2RAD}" upper="${45.*DEG2RAD}" />
       <dynamics friction="0" damping="3.0"/>
     </joint>
 
@@ -336,7 +336,7 @@
     <child link="LHipMot"/>
     <origin xyz="${156.9*mmTom} ${60.*mmTom} ${-108.*mmTom}" rpy="0 0 0" />
     <axis xyz="1 0 0" />
-    <limit velocity="6.283" effort="400" lower="-0.697778" upper="0.87222" />
+    <limit velocity="6.283" effort="400" lower="${-40.*DEG2RAD}" upper="${50.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -345,7 +345,7 @@
     <child link="LThighUpLeg"/>
     <origin xyz="-0.0889 0.121032 -0.217872" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit velocity="6.283" effort="140" lower="-0.872222" upper="1.57" />
+    <limit velocity="6.283" effort="140" lower="${-50.*DEG2RAD}" upper="${90.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -354,7 +354,7 @@
     <child link="LThighLowLeg"/>
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit velocity="6.283" effort="400" lower="-2.09333" upper="1.046667" />
+    <limit velocity="6.283" effort="400" lower="${-120.*DEG2RAD}" upper="${60.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -363,7 +363,7 @@
     <child link="LLowLeg"/>
     <origin xyz="0.0 0.0 -0.356" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit velocity="6.283" effort="400" lower="0.0" upper="2.442222" />
+    <limit velocity="6.283" effort="400" lower="0.0" upper="${140.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -372,7 +372,7 @@
     <child link="LFootmot"/>
     <origin xyz="0.0 0.0 -0.4" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit velocity="6.283" effort="330" lower="-1.39556" upper="0.697778" />
+    <limit velocity="6.283" effort="330" lower="${-80.*DEG2RAD}" upper="${40.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
@@ -381,7 +381,7 @@
     <child link="LFoot"/>
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
     <axis xyz="1 0 0" />
-    <limit velocity="6.283" effort="210" lower="-0.785" upper="0.785" />
+    <limit velocity="6.283" effort="210" lower="${-45.*DEG2RAD}" upper="${45.*DEG2RAD}" />
     <dynamics friction="0" damping="3.0"/>
   </joint>
 
