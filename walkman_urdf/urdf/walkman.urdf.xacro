@@ -75,9 +75,10 @@
 
 		
 
-
-<xacro:include filename="$(find bigman_urdf)/urdf/sensors/imu.urdf.xacro"/>
 -->
+
+<xacro:include filename="$(find walkman_urdf)/urdf/sensors/imu.urdf.xacro"/>
+
   
 </robot>
 
