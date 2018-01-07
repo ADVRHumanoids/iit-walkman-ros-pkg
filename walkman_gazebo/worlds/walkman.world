@@ -9,10 +9,16 @@
     </include>
     <include>
       <uri>model://wall</uri>
-      <pose>1.7 0.0 0 0 0 1.57</pose>
+      <pose>1.8 0.0 0 0 0 1.57</pose>
     </include>
     <include>
       <uri>model://walkman</uri>
     </include>
+    <gui fullscreen='0'>
+      <camera name="user_camera">
+        <pose>-0.23 6.0 2.5 0 0.21 -1.5</pose>
+	<view_controller>orbit</view_controller>
+      </camera>
+    </gui>
   </world>
 </sdf>
