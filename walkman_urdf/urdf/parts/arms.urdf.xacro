@@ -141,16 +141,20 @@
    <inertia ixx="${1.4415192e+02*mm2Tom2}"  ixy="${9.8651826e-02*mm2Tom2}"  ixz="0" iyy="${1.4417010e+02*mm2Tom2}" iyz="0" izz="${6.0500616e+01*mm2Tom2}" />
  </inertial>
  <visual>
-   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <!--origin xyz="0 0 0" rpy="0 0 0"/-->
+   <origin xyz="0 0 0" rpy="0 0 0.785"/>
    <geometry name="RWrMot3_visual">
-     <mesh filename="package://walkman_urdf/meshes/ForearmYaw.STL" scale="0.001 0.001 0.001" />
+     <!--mesh filename="package://walkman_urdf/meshes/ForearmYaw.STL" scale="0.001 0.001 0.001" /-->
+     <box size="0.1 0.1 0.01" />
    </geometry>
   <material name="blue"/>
  </visual>
  <collision>
-   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <!--origin xyz="0 0 0" rpy="0 0 0"/-->
+   <origin xyz="0 0 0" rpy="0 0 0.785"/>
    <geometry name="RWrMot3_collision">
-     <mesh filename="package://walkman_urdf/meshes/simple/ForearmYaw.STL" scale="0.001 0.001 0.001" />
+     <!--mesh filename="package://walkman_urdf/meshes/simple/ForearmYaw.STL" scale="0.001 0.001 0.001" /-->
+     <box size="0.1 0.1 0.01" />
    </geometry>             
  </collision>
 </link>
@@ -352,16 +356,20 @@
    <inertia ixx="${1.4415192e+02*mm2Tom2}"  ixy="${9.8651826e-02*mm2Tom2}"  ixz="0" iyy="${1.4417010e+02*mm2Tom2}" iyz="0" izz="${6.0500616e+01*mm2Tom2}" />
  </inertial>
  <visual>
-   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <!--origin xyz="0 0 0" rpy="0 0 0"/-->
+   <origin xyz="0 0 0" rpy="0 0 0.785"/>
    <geometry name="LWrMot3_visual">
-     <mesh filename="package://walkman_urdf/meshes/ForearmYaw.STL" scale="0.001 -0.001 0.001" />
+     <!--mesh filename="package://walkman_urdf/meshes/ForearmYaw.STL" scale="0.001 -0.001 0.001" /-->
+     <box size="0.1 0.1 0.01" />
    </geometry>
   <material name="blue"/>
  </visual>
  <collision>
-   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <!--origin xyz="0 0 0" rpy="0 0 0"/-->
+   <origin xyz="0 0 0" rpy="0 0 0.785"/>
    <geometry name="LWrMot3_collision">
-     <mesh filename="package://walkman_urdf/meshes/simple/ForearmYaw.STL" scale="0.001 -0.001 0.001" />
+     <!--mesh filename="package://walkman_urdf/meshes/simple/ForearmYaw.STL" scale="0.001 -0.001 0.001" /-->
+     <box size="0.1 0.1 0.01" />
    </geometry>             
  </collision>
 </link>

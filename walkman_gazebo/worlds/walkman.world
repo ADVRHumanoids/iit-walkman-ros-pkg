@@ -9,7 +9,7 @@
     </include>
     <include>
       <uri>model://wall</uri>
-      <pose>1.8 0.0 0 0 0 1.57</pose>
+      <pose>1.7 0.0 0 0 0 1.57</pose>
     </include>
     <include>
       <uri>model://walkman</uri>
