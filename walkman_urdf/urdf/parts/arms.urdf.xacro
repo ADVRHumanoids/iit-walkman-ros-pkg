@@ -142,7 +142,7 @@
  </inertial>
  <visual>
    <!--origin xyz="0 0 0" rpy="0 0 0"/-->
-   <origin xyz="0 0 0" rpy="0 0 0.785"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
    <geometry name="RWrMot3_visual">
      <!--mesh filename="package://walkman_urdf/meshes/ForearmYaw.STL" scale="0.001 0.001 0.001" /-->
      <box size="0.1 0.1 0.01" />
@@ -151,7 +151,7 @@
  </visual>
  <collision>
    <!--origin xyz="0 0 0" rpy="0 0 0"/-->
-   <origin xyz="0 0 0" rpy="0 0 0.785"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
    <geometry name="RWrMot3_collision">
      <!--mesh filename="package://walkman_urdf/meshes/simple/ForearmYaw.STL" scale="0.001 0.001 0.001" /-->
      <box size="0.1 0.1 0.01" />
@@ -357,7 +357,7 @@
  </inertial>
  <visual>
    <!--origin xyz="0 0 0" rpy="0 0 0"/-->
-   <origin xyz="0 0 0" rpy="0 0 0.785"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
    <geometry name="LWrMot3_visual">
      <!--mesh filename="package://walkman_urdf/meshes/ForearmYaw.STL" scale="0.001 -0.001 0.001" /-->
      <box size="0.1 0.1 0.01" />
@@ -366,7 +366,7 @@
  </visual>
  <collision>
    <!--origin xyz="0 0 0" rpy="0 0 0"/-->
-   <origin xyz="0 0 0" rpy="0 0 0.785"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
    <geometry name="LWrMot3_collision">
      <!--mesh filename="package://walkman_urdf/meshes/simple/ForearmYaw.STL" scale="0.001 -0.001 0.001" /-->
      <box size="0.1 0.1 0.01" />

@@ -7,10 +7,19 @@
     <include>
       <uri>model://sun</uri>
     </include>
+
     <include>
       <uri>model://wall</uri>
-      <pose>2.2 0.0 0 0 0 1.570796</pose>
+      <name>wall_1</name>
+      <pose>1.4 0 0 0 0 2.3561944</pose>
     </include>
+
+    <include>
+      <uri>model://wall</uri>
+      <name>wall_2</name>
+      <pose>1.4 0 0 0 0 0.785398</pose>
+    </include>
+
     <include>
       <uri>model://walkman</uri>
     </include>
