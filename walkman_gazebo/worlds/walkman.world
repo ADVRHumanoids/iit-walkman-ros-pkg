@@ -11,13 +11,13 @@
     <include>
       <uri>model://wall</uri>
       <name>wall_1</name>
-      <pose>1.4 0 0 0 0 2.3561944</pose>
+      <pose>1.6 0 0 0 0 2.3561944</pose>
     </include>
 
     <include>
       <uri>model://wall</uri>
       <name>wall_2</name>
-      <pose>1.4 0 0 0 0 0.785398</pose>
+      <pose>1.6 0 0 0 0 0.785398</pose>
     </include>
 
     <include>
