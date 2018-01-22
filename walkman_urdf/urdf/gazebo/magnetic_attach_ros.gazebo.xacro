@@ -4,11 +4,11 @@
 
 <gazebo>
 <plugin name="magnetic_LSoftHand" filename="libmagnetic.so">
-       <link_name>LWrMot3</link_name>
+       <link_name>LSoftHand</link_name>
 </plugin>
 
 <plugin name="magnetic_RSoftHand" filename="libmagnetic.so">
-       <link_name>RWrMot3</link_name>
+       <link_name>RSoftHand</link_name>
 </plugin>
 </gazebo>
 

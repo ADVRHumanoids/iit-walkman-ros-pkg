@@ -39,7 +39,7 @@
 <xacro:include filename="$(find walkman_urdf)/urdf/gazebo/xbot_control.gazebo.xacro" />
 
  
-<!--xacro:include filename="$(find bigman_urdf)/urdf/gazebo/magnetic_attach_ros.gazebo.xacro" /-->
+<xacro:include filename="$(find walkman_urdf)/urdf/gazebo/magnetic_attach_ros.gazebo.xacro" />
   
 
   
