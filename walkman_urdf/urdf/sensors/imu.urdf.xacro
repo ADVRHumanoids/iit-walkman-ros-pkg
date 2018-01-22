@@ -18,11 +18,10 @@
     </visual>
   </link>
 
-<!-- TODO: CHANGE THE ORIGIN OF THE SENSOR ACCORDING TO THE REAL ONE -->
 <joint name="imu_joint" type="fixed">
     <parent link="Waist"/>
     <child link="imu_link"/>
-    <origin xyz="${116.998*mmTom} ${0.0283129*mmTom} ${-47.8857*mmTom}" rpy="0 0 0"/>
+    <origin xyz="${117.0*mmTom} 0.0 ${-47.7493*mmTom}" rpy="0 0 0"/>
 </joint>
 
 </robot>
