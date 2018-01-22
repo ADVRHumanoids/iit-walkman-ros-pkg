@@ -147,22 +147,6 @@ The coordinate frame called base_link is rigidly attached to the robot root body
 
 <xacro:include filename="$(find walkman_urdf)/urdf/parts/soft_hand.urdf.xacro" />
 
-<!--
-<link name="l_arm_ft"/>
-	<link name="r_arm_ft"/>
-
-	<joint name="l_arm_ft_joint" type="fixed">
-	    <parent link="LWrMot3"/>
-	    <child link="l_arm_ft"/>
-	    <origin xyz="0 0 -0.0565" rpy="0 0 0" /> 
-	</joint>
-
-	<joint name="r_arm_ft_joint" type="fixed">
-	    <parent link="RWrMot3"/>
-	    <child link="r_arm_ft"/>
-	    <origin xyz="0 0 -0.0565" rpy="0 0 0" /> 
-	</joint>
--->
 
 </robot>
 
