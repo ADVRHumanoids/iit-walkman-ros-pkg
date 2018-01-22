@@ -45,17 +45,6 @@
     <origin xyz="0.005 0 -0.107" rpy="0 0 0"/> 
 </joint>
 
-<!--
-	
-
-
-
-
-	<xacro:include filename="$(find bigman_urdf)/urdf/parts/soft_hand.urdf.xacro" />
-
-		
-
--->
 
 <xacro:include filename="$(find walkman_urdf)/urdf/sensors/imu.urdf.xacro"/>
 
