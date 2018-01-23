@@ -7,7 +7,12 @@
 
 <!-- LINKS -->
 <link name="RSoftHand">
-<collision>
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="1e-12"  ixy="0.0"  ixz="0.0" iyy="1e-12" iyz="0.0" izz="1e-12" />
+    </inertial>
+    <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry name="RSoftHand_collision">
         <box size="0.1 -0.01 0.1" />
@@ -39,6 +44,11 @@
 
 
   <link name="LSoftHand">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="1e-12"  ixy="0.0"  ixz="0.0" iyy="1e-12" iyz="0.0" izz="1e-12" />
+    </inertial>
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry name="LSoftHand_collision">
