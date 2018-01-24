@@ -45,7 +45,7 @@
     <origin xyz="0.005 0 -0.107" rpy="0 0 0"/> 
 </joint>
 
-<!--
+
 	<link name="l_arm_ft"/>
 	<link name="r_arm_ft"/>
 
@@ -62,7 +62,7 @@
 	</joint>
 
 
-
+<!--
 	<link name="l_wrist"/>
 	<link name="r_wrist"/>
 
