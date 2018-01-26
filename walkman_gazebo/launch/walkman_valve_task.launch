@@ -22,7 +22,7 @@
 
   <!-- from where the simulation enviornment will be loaded:
        WARNING: exactly one parameter has to be true, otherwise simulation behaviour is undefined -->
-  <arg name="world_name" default="$(find walkman_final_demo_field)/walkman_final_demo_valve.world"/>
+  <arg name="world_name" default="$(find walkman_final_demo_field)/walkman_final_demo.world"/>
 
   <!-- Internal arguments, rewrite human-readable gazebo arguments to it's internal arguments -->
   <arg unless="$(arg paused)" name="command_arg1" value=""/>
@@ -49,7 +49,7 @@
       <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" if="$(arg gui)"/>
 
 <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-    args="-urdf -param robot_description -model walkman -x 0.0 -y 0.0 -z 0.0 -R 0 -P 0 -Y 0.0"/>
+    args="-urdf -param robot_description -model walkman -x -1.5 -y 0.0 -z 0.0 -R 0 -P 0 -Y -0.0"/>
 
   </group>
 
