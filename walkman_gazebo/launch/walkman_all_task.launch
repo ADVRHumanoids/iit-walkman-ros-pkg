@@ -49,7 +49,7 @@
       <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" if="$(arg gui)"/>
 
 <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-    args="-urdf -param robot_description -model walkman -x 1.83 -y -1.26 -z 0.0 -R 0 -P 0 -Y 3.1415926"/>
+    args="-urdf -param robot_description -model walkman -x 2.0 -y -1.2 -z 0.0 -R 0 -P 0 -Y 3.1415926"/>
 
   </group>
 
