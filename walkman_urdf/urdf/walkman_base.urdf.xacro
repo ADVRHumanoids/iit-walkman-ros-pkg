@@ -86,6 +86,13 @@ The coordinate frame called base_link is rigidly attached to the robot root body
 <xacro:include filename="$(find walkman_urdf)/urdf/parts/torso.urdf.xacro" />
 
 <xacro:include filename="$(find walkman_urdf)/urdf/parts/neck.urdf.xacro" />
+
+<link name="gaze"/>
+<joint name="gaze_joint" type="fixed">
+       <parent link="NeckPitch"/>
+       <child link="gaze"/>
+       <origin xyz="0 ${-34.25*mmTom} 0" rpy="0 0 0" />
+</joint>
   
 
 
